@@ -1,0 +1,88 @@
+.table-container {
+    margin: 0 auto;
+    width: 80%;
+    padding: 1rem; /* Add padding to ensure separation */
+  }
+  
+  .custom-table {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    border: none;
+  }
+  
+  .p-datatable {
+    border: none;
+  }
+  
+  .p-datatable-thead > tr > th,
+  .p-datatable-tbody > tr > td {
+    border: none !important;
+  }
+  
+  .p-datatable-header {
+    background-color: #f8f9fa;
+  }
+  
+  .p-datatable-striped .p-datatable-tbody > tr:nth-child(even) {
+    background-color: #f8f9fa;
+  }
+  
+  .p-button-info {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .p-button-warning {
+    background-color: #fd7e14;
+    border-color: #fd7e14;
+  }
+  
+  .p-button-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+  }
+  
+  .assign-task-dialog .field {
+    margin-bottom: 1rem;
+  }
+  
+  .assign-task-dialog label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+  
+  .assign-task-dialog .p-inputtextarea {
+    width: 100%;
+  }
+  
+  .assign-task-dialog .p-calendar {
+    width: 100%;
+  }
+  
+  .assign-task-dialog .p-dialog-content {
+    padding: 1.5rem;
+  }
+  
+  .assign-task-dialog .p-dialog-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+  }
+  
+  .task-message {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    border-radius: 0.25rem;
+    text-align: center;
+  }
+  
+  .p-calendar {
+    width: 100%;
+    display: block;
+  }
+  

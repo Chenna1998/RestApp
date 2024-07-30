@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #def0f3; /* Set your desired background color */
+  color: #333; /* Optional: set a default text color */
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #def0f3;
+}
+
+.content {
+  flex: 1; /* This makes sure content takes up all available space */
+  padding: 2rem;
+  padding-top: 80px; /* Add top padding to avoid content being hidden under fixed navbar */
+}
+
+.footer {
+  background: rgb(0, 33, 65);
+  color: #fff;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin: 1rem;
+}
+
+.footer-section h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.footer-section p {
+  font-size: 1.4rem;
+}
+
+.footer-section .socials a {
+  font-size: 1.8rem;
+  color: #fff;
+  margin-right: 1rem;
+  transition: color 0.3s;
+}
+
+.footer-section .socials a:hover {
+  color: #ffd700; /* Change color on hover */
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #ffd700; /* Change color on hover */
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 1rem 0;
+  border-top: 1px solid #ddd;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    margin: 1rem 0;
+  }
+}

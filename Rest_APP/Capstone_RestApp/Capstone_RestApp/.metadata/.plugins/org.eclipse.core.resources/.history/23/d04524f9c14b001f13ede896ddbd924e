@@ -1,0 +1,5 @@
+package com.microservice.account.exception;
+
+public class ResourceNotFoundException {
+
+}

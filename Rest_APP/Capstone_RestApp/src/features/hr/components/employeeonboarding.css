@@ -1,0 +1,45 @@
+
+.card {
+    border-radius: 8px;
+  }
+  
+  .card-header {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .employee-form .form-label {
+    font-weight: bold;
+  }
+  
+  .employee-form .btn-primary {
+    background-color: #ec9c6d;
+    border-color: #ec9c6d;
+    border-radius: 8px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .employee-form .btn-primary:hover {
+    background-color: #ec9c6d;
+  }
+  
+  .employee-form .alert {
+    margin-top: 10px;
+    border-radius: 8px;
+  }
+  
+  .employee-form h5 {
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #ee9d51;
+  }
+  .custom-alert {
+    color: white;
+    background-color: #007bff; 
+    border-color: #007bff;    
+}

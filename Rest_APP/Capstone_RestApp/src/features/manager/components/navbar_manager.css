@@ -1,0 +1,106 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 70.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: Arial, sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(204, 204, 204);
+}
+
+.nav__link:hover {
+  color: rgb(255, 255, 255);
+}
+
+.logo {
+  width: 40px; 
+  height: 40px;
+  object-fit: contain; 
+  margin-right: 1rem;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  height: 60px; 
+  background: rgb(0, 33, 65);
+  padding: 0 20px; 
+  position: fixed; /* Fix the navbar to the top */
+  top: 0; /* Align it to the top */
+  width: 100%; /* Make sure it spans the entire width */
+  z-index: 1000; /* Ensure it is above other elements */
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav__brand {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-transform: none; /* Ensure text is not transformed to uppercase */
+}
+
+.nav__menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 5rem;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-username {
+  color: #fff;
+  margin-right: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .nav__toggler {
+    display: block;
+    cursor: pointer;
+  }
+  .nav__menu {
+    position: fixed;
+    top: 7vh;
+    right: 0;
+    height: 93vh;
+    width: 50vw;
+    background: rgb(0, 33, 65);
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: 0.5s ease-in;
+  }
+}
+
+/* Active Class */
+.nav__active {
+  transform: translateX(0%);
+}
+
+.d-flex {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}

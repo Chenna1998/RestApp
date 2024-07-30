@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9; /* Ensure the background color is consistent */
+  }
+  
+  .page {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f9; /* Ensure the background color covers the entire page */
+  }
+  
+  .cover {
+    background-color: white;
+    width: 30em;
+    max-width: 90%;
+    height: auto;
+    padding: 2em 1em;
+    border-radius: 1em;
+    box-shadow: 0 0.188em 1.550em rgb(156, 156, 156);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .incedo {
+    background-image: url("../icons/incedo_logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 150px;
+    height: 100px;
+    box-shadow: 0 15px 8px rgba(214, 15, 15, 0.1);
+    border-radius: 25px;
+    margin-bottom: -1em;
+  }
+  
+  .incedo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .login-title {
+    margin-top: 1em;
+    font-size: 2em;
+    font-weight: bold;
+  }
+  
+  .inpt {
+    border: none;
+    background-color: rgb(229, 226, 226);
+    height: 4em;
+    width: 80%;
+    border-radius: 0.25em;
+    text-align: center;
+    padding: 2em;
+    text-transform: none;
+    margin-bottom: 1em;
+  }
+  
+  .inpt:focus {
+    outline-color: rgb(242, 115, 69);
+  }
+  
+  .login-btn {
+    width: 80%;
+    height: 3em;
+    background-color: rgb(245, 113, 65);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    border-radius: 0.25em;
+    cursor: pointer;
+    margin-top: 1em;
+  }
+  
+  .login-btn:hover {
+    transform: scale(1.1);
+  }
+  
+  .alert {
+    width: 80%;
+    margin-bottom: 1em;
+  }
+  
+  @media (max-width: 768px) {
+    .cover {
+      width: 80%;
+      padding: 1.5em;
+    }
+  
+    .inpt {
+      height: 3em;
+      padding: 1.5em;
+    }
+  
+    .login-btn {
+      height: 2.5em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .cover {
+      width: 95%;
+      padding: 1em;
+    }
+  
+    .inpt {
+      height: 2.5em;
+      padding: 1em;
+    }
+  
+    .login-btn {
+      height: 2em;
+    }
+  }
+  

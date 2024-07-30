@@ -1,0 +1,26 @@
+package com.microservice.account.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
+public class HRService {
+	
+	@Autowired
+	private HRService hrService; 
+	
+	@Autowired
+	private UserInfoService userInfoService;
+	
+	@Autowired
+	private HRRepository hrRepository;
+	
+	
+	public HR insertHR(HR hr) {
+		String rawPass = hr.getUserInfo().getPassword();
+		String encodedPass = passwordEncoder.encode(rawPass);
+		hr.getUserInfo().setPassword(encodedPass);
+		return hrRepository.save(hr);
+	}
+
+}

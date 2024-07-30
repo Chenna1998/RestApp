@@ -1,0 +1,5 @@
+package com.microservice.account.repository;
+
+public interface EmployeeRepository extends JpaRepository<Employee, Integer>{
+
+}
