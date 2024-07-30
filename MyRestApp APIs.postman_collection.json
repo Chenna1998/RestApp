@@ -1,0 +1,1002 @@
+{
+	"info": {
+		"_postman_id": "2c9a908f-32f6-4771-b7d1-bdb271b452bd",
+		"name": "MyRestApp APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37089867"
+	},
+	"item": [
+		{
+			"name": "capstone",
+			"item": [
+				{
+					"name": "POST: HR",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Albus Dumbledore\",\r\n    \"userInfo\":{\r\n        \"username\": \"albus@gmail.com\",\r\n        \"password\": \"albus@123\"\r\n    }\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/api/hr/add",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"hr",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST: Manager",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "albus@123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "albus@gmail.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Harley\",\r\n    \"email\": \"Harley@gmail.com\",\r\n    \"contact\": \"507001\",\r\n    \"userInfo\":{\r\n        \"username\": \"Harley@gmail.com\",\r\n        \"password\": \"Harley@123\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/api/manager/add",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"manager",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LOGIN",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "dan@123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "dan@gmail.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/api/login",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST: Employee",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "albus@123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "albus@gmail.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"rev1\",\r\n    \"city\": \"davenport\",\r\n    \"salary\":87000,\r\n    \"jobTitle\": \"DEVELOPER\",\r\n    \"userInfo\":{\r\n        \"username\": \"rev1@gmail.com\",\r\n        \"password\": \"rev1@123\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/api/employee/add/31",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"employee",
+								"add",
+								"31"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET; Region",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/api/region/all",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"region",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get hr stats",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "albus@123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "albus@gmail.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/api/hr/stat",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"hr",
+								"stat"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET All Manager with Employees",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "albus@123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "albus@gmail.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/api/hr/manager/employee",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"hr",
+								"manager",
+								"employee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET ALl Jobtitle",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "albus@123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "albus@gmail.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/api/jobtype",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"jobtype"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET ALL Manager",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/api/manager/all",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"manager",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search Results",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/api/search/employee/manager/new",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"search",
+								"employee",
+								"manager",
+								"new"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Employee By Manager",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Varsha@123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Varsha@gmail.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/api/manager/employee",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"manager",
+								"employee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Task Archive",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Varsha@123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Varsha@gmail.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/api/task/archive/20",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"task",
+								"archive",
+								"20"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "albus@123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "albus@gmail.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/api/login",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Items ADD",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "albus@123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "albus@gmail.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Mouse Pad\",\r\n    \"description\" : \"It's a soft mousepad\",\r\n    \"quantity\": 10,\r\n    \"points\": 100\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/api/items/add",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"items",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get ALL Items",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "trump@123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "trump@gmail.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/api/item/getAll",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"item",
+								"getAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Reward Points",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "rev1@123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "rev1@gmail.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/api/employee/rewardpoints",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"employee",
+								"rewardpoints"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST: Employee Item",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "trump@123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "trump@gmail.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[34, 35]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/api/employee/item/post",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"employee",
+								"item",
+								"post"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT: update reward points",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "trump@123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "trump@gmail.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/api/update/employee/rewardpoints/200",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"update",
+								"employee",
+								"rewardpoints",
+								"200"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "GET ALL: Employee",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "ac0d69a6-b9af-45ab-b3ac-31c2c328efe7",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/api/employee/getall",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"employee",
+						"getall"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE By ID - Employee",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/api/employee/delete/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"employee",
+						"delete",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EDIT: Employee",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"city\": \"new york\",\r\n    \"salary\": 654000,\r\n    \"jobTitle\": \"PROJECT_MANAGER\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/api/employee/edit/12",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"employee",
+						"edit",
+						"12"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ADD: Country",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"countryName\": \"AUS\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/api/country/add",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"country",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ADD: Region",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"regionName\": \"canberra\",\r\n    \"pincode\": \"498675\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/api/region/add/39",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"region",
+						"add",
+						"39"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ADD: Customer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"ronald\",\r\n    \"contact\": \"454545\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/api/customer/add/36",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"customer",
+						"add",
+						"36"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST: Assign Employee to Project",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/api/employee/project/assign/2/11",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"employee",
+						"project",
+						"assign",
+						"2",
+						"11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST: project",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\" : \"React UI ecom\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/api/project/add/6",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"project",
+						"add",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET: Customer By Country",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/api/customer/country/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"customer",
+						"country",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET-Customer by region",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/api/customer/region/7",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"customer",
+						"region",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GETALL - customer",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "harry@123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "harry@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/api/customer/getall",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"customer",
+						"getall"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"dan\",\r\n    \"city\": \"dallas\",\r\n    \"salary\": 45000.0,\r\n    \"userInfo\":{\r\n        \"username\": \"dan@gmail.com\",\r\n        \"password\": \"dan@123\"\r\n    }\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/api/employee/add",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"employee",
+						"add"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
